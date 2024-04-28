@@ -7,7 +7,7 @@ on:
 env:
   PROJECT_ID: vocal-eon-416516
   GAR_LOCATION: europe-west9
-  REPOSITORY: epita-examplye-register # TODO: update Artifact Registry repository name
+  REPOSITORY: epita-examplye-register
   SERVICE: youtube-api-job # TODO:
   REGION: europe-west9  
 
