@@ -2,7 +2,7 @@ build-image:
 	docker build -t youtube-api-job .
 
 build-container:
-	docker run -it -d -p 8080:8080 youtube-api-job
+	docker run -it -p 8080:8080 youtube-api-job
 
 
 docker-clean:
