@@ -13,3 +13,12 @@ docker-clean:
 
 test-service:
 	curl -X GET https://youtube-api-job-pal7kd4esq-od.a.run.app/trigger-youtube-api-job
+
+
+
+tag_image:
+	docker buildx build --platform linux/amd64 -t youtube-api-job .
+
+	docker tag 9be95f9ad8ea europe-west9-docker.pkg.dev/vocal-eon-416516/epita-examplye-register/youtube-api-job
+
+	docker push europe-west9-docker.pkg.dev/vocal-eon-416516/epita-examplye-register/youtube-api-job
