@@ -15,7 +15,7 @@ app = FastAPI()
 async def retrieve_new_video_data():
     nb_days = 1
     max_search_results = 1
-    api_key = "AIzaSyB5Gk38Q73uhco5Dugj7cYgrp5auNZA0Fs"
+    api_key = ""
     base_url = "https://www.googleapis.com/youtube/v3"
     project = 'My Fist Project'
     local_credentials_path = 'credentials.json'
