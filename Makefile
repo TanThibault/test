@@ -17,8 +17,12 @@ test-service:
 
 
 tag_image:
+	# only for mac
 	docker buildx build --platform linux/amd64 -t youtube-api-job .
 
 	docker tag 9be95f9ad8ea europe-west9-docker.pkg.dev/vocal-eon-416516/epita-examplye-register/youtube-api-job
 
 	docker push europe-west9-docker.pkg.dev/vocal-eon-416516/epita-examplye-register/youtube-api-job
+
+
+	gcloud auth configure-docker {REGION}-docker.pkg.dev --quiet
